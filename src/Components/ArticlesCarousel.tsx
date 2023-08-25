@@ -4,8 +4,8 @@ import ImageC from './ImageC';
 
 function ArticlesCarousel() {
   return (
-    <div>
-      <h1>Hell</h1>
+    <div className='p-5'>
+      <h1 className='text-center pb-5'>Hell</h1>
       <Carousel>
         <Carousel.Item>
           <ImageC />

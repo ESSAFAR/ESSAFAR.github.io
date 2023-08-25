@@ -17,14 +17,13 @@ const NumberDisplay = () => {
   }, [numbers.length]);
 
   return (
-    <div className="container mt-4">
+    <div className="container mt-4 mx-5">
       <div className="row justify-content-center">
         <div className="col-md-4">
-          <div className="card" style={{ height: '20rem' }}> 
-          <img src="..." className="card-img-top" alt="..." />
-            <div className="card-body d-flex flex-column justify-content-center">
-              <p className="h2 card-title text-center">Notre impacte!</p>
-              <p className="card-text"><div className=''>{numbers[currentDisplay].count}</div>{" "}{numbers[currentDisplay].label}</p>
+          <div className="card" style={{ height: '30rem' }}> 
+            <div className="card-body d-flex flex-column justify-content-center ">
+              <p className="h2 card-title text-center text-primary-emphasis pb-5">Notre impacte!</p>
+              <p className="card-text text-center border border-primary py-5 mx-5 px-0"><div className='display-1 '>{numbers[currentDisplay].count}</div>{" "}{numbers[currentDisplay].label}</p>
             </div>
           </div>
         </div>

@@ -4,11 +4,12 @@ import Container from 'react-bootstrap/esm/Container';
 import Navbar from 'react-bootstrap/esm/Navbar';
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary sticky-md-top">
       <Container>
         <Navbar.Brand href="#home">
         <img
@@ -25,6 +26,7 @@ const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto ">
               <Col xs="auto" className='px-2'><Nav.Link  href="#home">Acceuil</Nav.Link></Col>
+              <Col xs="auto" className='px-2'><Link to = {'/AllArticles'} >Articles</Link></Col>
               <Col xs="auto" className='px-2'> <Nav.Link href="#link">Qui sommes nous?</Nav.Link></Col>
               <Col xs="auto" className='px-2'><Nav.Link href="#link">Contacter nous</Nav.Link></Col>
               <Col xs="auto" className='px-2'><Nav.Link href="#link">Representation EMI</Nav.Link></Col>
