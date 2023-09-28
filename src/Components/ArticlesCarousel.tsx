@@ -5,7 +5,7 @@ import ImageC from './ImageC';
 function ArticlesCarousel() {
   return (
     <div className='p-5'>
-      <h1 className='text-center pb-5'>Hell</h1>
+      <h1 className='text-center pb-5'>Tous pour un futur !</h1>
       <Carousel>
         <Carousel.Item>
           <ImageC />

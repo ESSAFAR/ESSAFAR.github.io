@@ -1,11 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { useParams } from 'react-router-dom';
 
 const Article = () => {
-  return (
-    <>
-    <div>Article</div>
-    </>
-  )
-}
+  const { id } = useParams();
 
-export default Article
+  // Fetch the article data using the 'id' parameter
+
+  return (
+    <div>
+      {/* Display the article content here */}
+      <h1>Article {id}</h1>
+      {/* Add the article content rendering */}
+    </div>
+  );
+};
+
+export default Article;

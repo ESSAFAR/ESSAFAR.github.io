@@ -5,6 +5,11 @@
   margin: 0px;
 }
 
+.link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 
 body{
   background-color: #f8f7f3;

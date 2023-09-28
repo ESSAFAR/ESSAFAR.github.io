@@ -9,7 +9,7 @@ interface Props {
   imgWidth : number
 }
 
-const Article = ({image, title, description, imgWidth} : Props) => {
+const ArticleCard = ({image, title, description, imgWidth} : Props) => {
   return (
     <Card border="primary" style={{ width: `${imgWidth}rem` }}>
       <Card.Img variant="Secondary" src={image} />
@@ -22,4 +22,4 @@ const Article = ({image, title, description, imgWidth} : Props) => {
     </Card>  )
 }
 
-export default Article
+export default ArticleCard
