@@ -42,9 +42,9 @@ const NavBar = () => {
             <Nav className="me-auto ">
               <Col xs="auto" className='px-2'><Link to = {'/'} className='link'>Acceuil</Link></Col>
               <Col xs="auto" className='px-2'><Link to = {'/AllArticles'} className='link'>Articles</Link></Col>
-              <Col xs="auto" className='px-2'> <Link to = {'/'} className='link'>Qui sommes nous?</Link></Col>
-              <Col xs="auto" className='px-2'><Link to = {'/'} className='link' onClick={scrollToBottom}>Contacter nous</Link></Col>
-              <Col xs="auto" className='px-2'><Link to = {'/'} className='link'>Representation EMI</Link></Col>
+              <Col xs="auto" className='px-2'> <Link to = {'/AboutUsMore'} className='link'>Qui sommes nous?</Link></Col>
+              <Col xs="auto" className='px-2 link'> <a onClick={scrollToBottom}>Contacter nous</a></Col>
+              <Col xs="auto" className='px-2'><Link to = {'/PresentationEMI'} className='link'>Presentation EMI</Link></Col>
             </Nav>
           </Navbar.Collapse>
         </Row>
